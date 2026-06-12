@@ -1,0 +1,9 @@
+.DS_Store
+*.log
+node_modules/
+.env
+.env.local
+
+# internal docs not deployed to the site
+EDITORIAL.md
+.prompts/
