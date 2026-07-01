@@ -16,7 +16,7 @@
 
   --fg:            #f4eff8;   /* warm white */
   --fg-2:          #b7adc6;   /* secondary */
-  --fg-3:          #7e7590;   /* tertiary / captions */
+  --fg-3:          #A99DBC;   /* tertiary / captions */
   --fg-4:          #534b63;   /* disabled */
   --line:          rgba(255,255,255,0.09);
   --line-strong:   rgba(255,255,255,0.18);
@@ -156,6 +156,7 @@ p { margin: 0; line-height: var(--lh-normal); }
 
 a { color: var(--neon-cyan); text-decoration: none; }
 a:hover { color: #fff; }
+main p a, main .stack-note a { text-decoration: underline; text-underline-offset: .18em; }
 
 /* ---------- Neon glow utilities ---------- */
 .neon-amber   { color:#fff; text-shadow:0 0 4px #fff,0 0 12px var(--neon-amber),0 0 26px var(--neon-amber),0 0 54px rgba(255,155,47,.7); }
@@ -454,7 +455,7 @@ footer.site {
 .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--s-7); }
 .foot-brand img { height: 76px; width: auto; filter: drop-shadow(0 0 16px rgba(255,155,47,.35)); }
 .foot-brand p { color: var(--fg-3); font-size: var(--fs-sm); margin-top: var(--s-4); max-width: 36ch; }
-.foot-col h5 { font-family: var(--f-marquee); letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-3); font-size: var(--fs-base); margin-bottom: var(--s-4); }
+.foot-col .foot-heading { font-family: var(--f-marquee); letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-3); font-size: var(--fs-base); margin: 0 0 var(--s-4); }
 .foot-col a, .foot-col p { display: block; color: var(--fg-2); font-size: var(--fs-md); margin-bottom: var(--s-2); border: 0; }
 .foot-col a:hover { color: #fff; }
 .foot-bottom { display: flex; justify-content: space-between; gap: var(--s-4); margin-top: var(--s-8); padding-top: var(--s-5); border-top: 1px solid var(--line); color: var(--fg-3); font-size: var(--fs-sm); flex-wrap: wrap; }
@@ -512,7 +513,7 @@ footer.site {
 .faq-item.open .faq-q .pm::after { transform: translate(-50%,-50%) scaleY(0); }
 .faq-a { max-height: 0; overflow: hidden; transition: max-height var(--dur-slow) var(--ease); }
 .faq-a-inner { padding: 0 var(--s-2) var(--s-6); color: var(--fg-2); font-size: var(--fs-md); line-height: var(--lh-loose); max-width: 64ch; }
-.faq-a-inner a { color: var(--neon-cyan); }
+.faq-a-inner a { color: var(--neon-cyan); text-decoration: underline; text-underline-offset: .18em; }
 .faq-item.open .faq-a { max-height: 480px; }
 .faq-cat { font-family: var(--f-marquee); letter-spacing: 0.16em; text-transform: uppercase; color: var(--neon-magenta);
   font-size: var(--fs-base); margin: var(--s-8) 0 var(--s-3); }
