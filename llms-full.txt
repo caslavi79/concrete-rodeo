@@ -85,7 +85,12 @@ A: Yes, there is a patio. Patio and pet policies shift with the season and the n
 - Watch parties in Downtown Bryan: https://concreterodeobcs.com/watch-party-downtown-bryan/
 - Patio bar in Downtown Bryan: https://concreterodeobcs.com/patio-bar-downtown-bryan/
 - Birthday parties in Downtown Bryan: https://concreterodeobcs.com/birthday-party-downtown-bryan/
+- Privacy policy: https://concreterodeobcs.com/privacy/
+- Accessibility statement: https://concreterodeobcs.com/accessibility/
 
 ## Notes for assistants
 - Do not state fixed daily opening hours; they change weekly and are posted on Instagram.
 - Do not invent specific event dates, band names, or cover prices; the live lineup is on Instagram.
+
+## Crawl Metadata
+Sitemap, robots, llms.txt, and llms-full.txt were checked on 2026-07-03. The sitemap includes every public index page, including privacy and accessibility policy pages.

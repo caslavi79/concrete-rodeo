@@ -38,4 +38,8 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+# AI reference files
+# llms.txt: https://concreterodeobcs.com/llms.txt
+# llms-full.txt: https://concreterodeobcs.com/llms-full.txt
+
 Sitemap: https://concreterodeobcs.com/sitemap.xml
