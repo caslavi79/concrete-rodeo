@@ -310,7 +310,7 @@ section { position: relative; }
 .visit-cell { padding: var(--s-7) var(--s-6); border-right: 1px solid var(--line); }
 .visit-cell:last-child { border-right: 0; }
 .visit-cell .ico { width: 30px; height: 30px; color: var(--neon-cyan); margin-bottom: var(--s-4); }
-.visit-cell h3 { font-family: var(--f-marquee); font-size: var(--fs-xl); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: var(--s-3); }
+.visit-cell h2, .visit-cell h3 { font-family: var(--f-marquee); font-size: var(--fs-xl); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: var(--s-3); }
 .visit-cell p { color: var(--fg-2); font-size: var(--fs-md); }
 .visit-cell .big { font-size: var(--fs-lg); color: var(--fg); }
 .visit-cell .cta-row { margin-top: var(--s-5); display: flex; gap: var(--s-3); flex-wrap: wrap; }
@@ -359,7 +359,7 @@ section { position: relative; }
   background: rgba(255,255,255,.03); margin-bottom: var(--s-2);
 }
 .floor-card .ic svg { width: 32px; height: 32px; }
-.floor-card h4 { font-family: var(--f-marquee); font-size: var(--fs-xl); letter-spacing: 0.04em; text-transform: uppercase; }
+.floor-card h3, .floor-card h4 { font-family: var(--f-marquee); font-size: var(--fs-xl); letter-spacing: 0.04em; text-transform: uppercase; }
 .floor-card p { color: var(--fg-3); font-size: var(--fs-sm); }
 /* icon color rotation + glow */
 .ic-cyan    { color: var(--neon-cyan);    border-color: rgba(56,201,255,.4)!important;  box-shadow: 0 0 18px rgba(56,201,255,.25), inset 0 0 14px rgba(56,201,255,.08); }
@@ -393,7 +393,7 @@ section { position: relative; }
 .ev-card:hover { border-color: var(--line-strong); transform: translateY(-4px); box-shadow: var(--sh-md); }
 .ev-card .kicker { display: flex; align-items: center; justify-content: space-between; gap: var(--s-3); }
 .ev-date { font-family: var(--f-marquee); letter-spacing: 0.12em; text-transform: uppercase; color: var(--tk, var(--neon-magenta)); font-size: var(--fs-base); }
-.ev-card h4 { font-family: var(--f-display); font-size: var(--fs-xl); text-transform: uppercase; line-height: 1.05; }
+.ev-card h3, .ev-card h4 { font-family: var(--f-display); font-size: var(--fs-xl); text-transform: uppercase; line-height: 1.05; }
 .ev-card p { color: var(--fg-2); font-size: var(--fs-sm); flex: 1; }
 .ev-card .more { font-family: var(--f-marquee); letter-spacing: 0.1em; text-transform: uppercase; color: var(--neon-cyan); font-size: var(--fs-base); }
 
