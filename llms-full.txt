@@ -5,7 +5,7 @@
 ## About
 Concrete Rodeo opened December 5, 2025 in Historic Downtown Bryan, Texas, taking over the room that was the 3rd Floor Cantina and turning it into a real country dance hall. It is part dive, part dance hall: a big wood floor built for two-stepping and line dancing, speakers pointed at the crowd, live bands and DJs most nights, a patio for the in-between, and a full bar with no menu to memorize. No velvet rope, no attitude.
 
-It is owned by Dustin Batson, a Marine Corps veteran and downtown Bryan bar owner whose other venues include West End Elixir Company and Word of Mouth Speakeasy. His former bars Citrus and Salt and Vice Downtown Bryan have closed; Final Score, opening soon at 121 N Main Street, replaces them.
+It is owned by Dustin Batson, a Marine Corps veteran and downtown Bryan bar owner whose other venues include West End Elixir Company and Word of Mouth Speakeasy. His former bars Citrus and Salt and Vice Downtown Bryan have closed; Final Score, open at 121 N Main Street, replaces them.
 
 ## Location and getting there
 - Address: 201 W 26th St, Bryan, TX 77803
@@ -15,7 +15,7 @@ It is owned by Dustin Batson, a Marine Corps veteran and downtown Bryan bar owne
 - Parking: free street parking around downtown Bryan after 6 PM, plus a lot out back; rideshare drop-off is out front on 26th Street
 
 ## Hours
-Hours move with the weekly lineup. Concrete Rodeo posts the current week's nights and last call on Instagram (@concrete_rodeo_). It generally runs Wednesday through the weekend. For an exact night, check Instagram.
+Hours follow the current lineup. Check @concrete_rodeo_ on Instagram for tonight's details.
 
 ## Drinks and food
 - Full bar: beer, well drinks, whiskey, margaritas, and more. No printed menu, just tell the bartender what you're drinking.
@@ -70,7 +70,7 @@ A: Yes, there is a patio. Patio and pet policies shift with the season and the n
 - Instagram: https://instagram.com/concrete_rodeo_
 - Email: concreterodeobryan@gmail.com
 - Website: https://concreterodeobcs.com/
-- No public phone number is listed; use Instagram DMs or email.
+- Phone: (281) 832-1482. Instagram DMs or email are usually faster for questions and bookings.
 
 ## Pages
 - Home: https://concreterodeobcs.com/
@@ -95,4 +95,4 @@ A: Yes, there is a patio. Patio and pet policies shift with the season and the n
 - Do not invent specific event dates, band names, or cover prices; the live lineup is on Instagram.
 
 ## Crawl Metadata
-Sitemap, robots, llms.txt, and llms-full.txt were checked on 2026-07-03. The sitemap includes every public index page, including privacy and accessibility policy pages.
+Sitemap, robots, llms.txt, and llms-full.txt were checked on 2026-07-19. The sitemap includes all 16 public index pages, including privacy and accessibility policy pages.
