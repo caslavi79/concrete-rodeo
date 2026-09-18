@@ -307,7 +307,7 @@ section { position: relative; }
 /* ---------------- VISIT STRIP (primary CTA) ---------------- */
 .visit { background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .visit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
-.visit-cell { padding: var(--s-7) var(--s-6); border-right: 1px solid var(--line); }
+.visit-cell { min-width: 0; padding: var(--s-7) var(--s-6); border-right: 1px solid var(--line); }
 .visit-cell:last-child { border-right: 0; }
 .visit-cell .ico { width: 30px; height: 30px; color: var(--neon-cyan); margin-bottom: var(--s-4); }
 .visit-cell h2, .visit-cell h3 { font-family: var(--f-marquee); font-size: var(--fs-xl); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: var(--s-3); }
@@ -352,7 +352,7 @@ section { position: relative; }
 
 /* ---------------- THE FLOOR (icon cards) ---------------- */
 .floor { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s-4); }
-.floor-card { display: flex; flex-direction: column; gap: var(--s-3); }
+.floor-card { min-width: 0; display: flex; flex-direction: column; gap: var(--s-3); }
 .floor-card .ic {
   width: 64px; height: 64px; display: inline-flex; align-items: center; justify-content: center;
   border-radius: var(--r-md); border: 1px solid var(--line-strong);
@@ -551,4 +551,12 @@ footer.site {
 
   .featured { padding: var(--s-7) var(--s-5); }
   .grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 420px) {
+  :root { --gutter: 16px; }
+  .floor { grid-template-columns: 1fr; }
+  .visit-cell { padding-left: var(--gutter); padding-right: var(--gutter); }
+  .visit-cell a,
+  main a { overflow-wrap: anywhere; }
 }
