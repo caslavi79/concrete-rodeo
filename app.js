@@ -10,6 +10,7 @@
     var burger = document.getElementById("navBurger");
     var menu = document.getElementById("mobileMenu");
     if (!burger || !menu) return;
+    burger.setAttribute("aria-controls", menu.id);
     burger.addEventListener("click", function () {
       var open = menu.classList.toggle("open");
       burger.setAttribute("aria-expanded", open ? "true" : "false");
@@ -20,19 +21,13 @@
         burger.setAttribute("aria-expanded", "false");
       });
     });
-  }
-
-  /* FAQ accordion — multiple panels can be open; answer reveal is a max-height
-     transition. Toggles aria-expanded for assistive tech. */
-  function initFaq() {
-    document.querySelectorAll(".faq-q").forEach(function (q) {
-      q.addEventListener("click", function () {
-        var item = q.closest(".faq-item");
-        var willOpen = !item.classList.contains("open");
-        item.classList.toggle("open", willOpen);
-        q.setAttribute("aria-expanded", willOpen ? "true" : "false");
-      });
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape" || !menu.classList.contains("open")) return;
+      menu.classList.remove("open");
+      burger.setAttribute("aria-expanded", "false");
+      burger.focus();
     });
+    document.documentElement.classList.add("nav-ready");
   }
 
   /* Events filtering — category chips toggle visibility of [data-cat] cards.
@@ -54,6 +49,7 @@
         });
       });
     });
+    document.documentElement.classList.add("filters-ready");
   }
 
   /* Reveal on scroll — fade/slide in. Honors prefers-reduced-motion via CSS. */
@@ -70,6 +66,7 @@
       });
     }, { threshold: 0.02, rootMargin: "0px 0px 120px 0px" });
     els.forEach(function (el) { io.observe(el); });
+    document.documentElement.classList.add("reveal-ready");
   }
 
   /* Events / FAQ sticky sub-tabs — scroll-spy + smooth jump. Only runs when
@@ -92,7 +89,6 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initNav();
-    initFaq();
     initEventsFilter();
     initReveal();
     initSubtabs();
