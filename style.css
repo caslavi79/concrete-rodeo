@@ -461,9 +461,9 @@ footer.site {
 .foot-bottom { display: flex; justify-content: space-between; gap: var(--s-4); margin-top: var(--s-8); padding-top: var(--s-5); border-top: 1px solid var(--line); color: var(--fg-3); font-size: var(--fs-sm); flex-wrap: wrap; }
 
 /* ---------------- reveal on scroll ---------------- */
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
-.reveal.in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
+.reveal-ready .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal-ready .reveal.in, .reveal-ready .reveal:focus-within { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal-ready .reveal { opacity: 1; transform: none; } }
 
 /* =========================================================================
    EVENTS & FAQ PAGE
@@ -487,7 +487,8 @@ footer.site {
 .subtab.active { color: #fff; border-color: var(--neon-cyan); box-shadow: 0 0 16px rgba(56,201,255,.4); background: rgba(56,201,255,.1); }
 
 /* filter chips */
-.filters { display: flex; gap: var(--s-3); justify-content: center; flex-wrap: wrap; margin: var(--s-7) 0 var(--s-8); }
+.filters { display: none; }
+.filters-ready .filters { display: flex; gap: var(--s-3); justify-content: center; flex-wrap: wrap; margin: var(--s-7) 0 var(--s-8); }
 .chip { font-family: var(--f-marquee); font-size: var(--fs-base); letter-spacing: 0.1em; text-transform: uppercase;
   padding: 9px 18px; border-radius: var(--r-pill); background: transparent; color: var(--fg-2);
   border: 1px solid var(--line-strong); cursor: pointer; transition: var(--dur-base) var(--ease); }
@@ -509,12 +510,13 @@ footer.site {
   box-shadow: 0 0 10px rgba(255,155,47,.7); transition: transform var(--dur-base) var(--ease); }
 .faq-q .pm::before { width: 18px; height: 2px; transform: translate(-50%,-50%); }
 .faq-q .pm::after  { width: 2px; height: 18px; transform: translate(-50%,-50%); }
-.faq-item.open .faq-q { color: #fff; }
-.faq-item.open .faq-q .pm::after { transform: translate(-50%,-50%) scaleY(0); }
-.faq-a { max-height: 0; overflow: hidden; transition: max-height var(--dur-slow) var(--ease); }
+.faq-item[open] .faq-q { color: #fff; }
+.faq-item[open] .faq-q .pm::after { transform: translate(-50%,-50%) scaleY(0); }
+.faq-q { list-style: none; }
+.faq-q::-webkit-details-marker { display: none; }
 .faq-a-inner { padding: 0 var(--s-2) var(--s-6); color: var(--fg-2); font-size: var(--fs-md); line-height: var(--lh-loose); max-width: 64ch; }
 .faq-a-inner a { color: var(--neon-cyan); text-decoration: underline; text-underline-offset: .18em; }
-.faq-item.open .faq-a { max-height: 480px; }
+
 .faq-cat { font-family: var(--f-marquee); letter-spacing: 0.16em; text-transform: uppercase; color: var(--neon-magenta);
   font-size: var(--fs-base); margin: var(--s-8) 0 var(--s-3); }
 .help-band { text-align: center; padding: var(--s-8) var(--gutter); margin-top: var(--s-8);
@@ -529,7 +531,11 @@ footer.site {
 @media (max-width: 900px) {
   :root { --fs-5xl: 72px; --fs-4xl: 50px; --fs-3xl: 36px; --fs-2xl: 28px; --gutter: 20px; }
   .nav-links, .nav-actions .btn { display: none; }
-  .nav-burger { display: block; }
+  .nav-ready .nav-burger { display: block; }
+  html:not(.nav-ready) .nav { position: static; }
+  html:not(.nav-ready) .mobile-menu { display: flex; flex-direction: row; flex-wrap: wrap; gap: 4px 18px; padding: 4px var(--gutter) 12px; }
+  html:not(.nav-ready) .mobile-menu a { display: inline-flex; align-items: center; min-height: 44px; font-size: var(--fs-base); }
+  html:not(.nav-ready) .mobile-menu .btn { width: auto; }
   .mobile-menu {
     display: none; flex-direction: column; gap: var(--s-4);
     padding: var(--s-5) var(--gutter) var(--s-7);
