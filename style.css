@@ -566,3 +566,14 @@ footer.site {
   .visit-cell a,
   main a { overflow-wrap: anywhere; }
 }
+
+/* Practical planning pages: readable copy and responsive related links. */
+.guide-copy { max-width: 72ch; margin-inline: auto; }
+.guide-copy h2 { margin-bottom: var(--s-5); }
+.guide-copy p + p, .guide-copy ul + p { margin-top: var(--s-5); }
+.guide-copy ul { padding-left: 1.3em; margin-block: var(--s-5); }
+.guide-copy li + li { margin-top: var(--s-3); }
+.guide-copy a { color: var(--neon-cyan); text-decoration: underline; text-underline-offset: .18em; }
+.guide-breadcrumbs { margin-bottom: var(--s-5); color: var(--fg-2); }
+.page-head .help-actions { margin-top: var(--s-6); }
+@media (min-width: 901px) { .ev-strip.guide-links { grid-template-columns: repeat(2,1fr); } }
